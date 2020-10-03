@@ -78,89 +78,9 @@ p {
     padding-left: 4rem;
 }
 
-
-.glitch {
-    font-size: 1.6rem;
-    font-weight: 100;
-    text-transform: uppercase;
-    position: relative;
-    font-family: 'Road Rage';
-
-    /* all in one with small offsets to let the colors bleed through 
-    IMPORTANT: using em will allow the text to be responsive to the text size*/
-    text-shadow: 
-        0.05em 0 0 rgb(255, 0, 0, .75),
-        -0.05em 0 0 rgb(0, 255, 0, .75),
-        0.025em 0 0 rgb(0, 0, 255, .75);
-    
-    animation: glitch 2000ms infinite;
-}
-
-.glitch span {
-    position: absolute;
-    align-items: center;
-    top: 0;
-    left: 0;
-}
-
-
-
-
-.glitch span:first-child{
-    animation: glitch 1000ms infinite;
-    z-index: 1;
-    clip-path: polygon(0 0, 90% 0, 90% 85%, 0 45%);
-    transform: translate(-.0015em, -0.025em);
-}
-
-.glitch span:last-child {
-    animation: glitch 1500ms infinite;
-    z-index: 20;
-    clip-path: polygon(55% 28%, 100% 50%, 86% 87%, 0 64%);
-    transform: translate(-.05em, -0.025em);
-}
-
-@keyframes glitch {
-    0% {
-        text-shadow: 
-        0.05em 0 0 rgb(255, 0, 0, .75),
-        -0.015em 0 0 rgb(0, 255, 0, .75),
-        0.025em 0 0 rgb(0, 0, 255, .75);
-        }
-    24% {
-        text-shadow: 
-        0.05em 0 0 rgb(255, 0, 0, .75),
-        -0.045em 0 0 rgb(0, 255, 0, .75),
-        0.025em 0 0 rgb(0, 0, 255, .75);
-        }
-    25% {
-        text-shadow: 
-        0.012em 0 0 rgb(255, 0, 0, .75),
-        -0.025em -0.025em 0 rgb(0, 255, 0, .75),
-        0.045em 0 0 rgb(0, 0, 255, .75);
-        }
-    49% {
-        text-shadow: 
-        0.012em 0 0 rgb(255, 0, 0, .75),
-        -0.025em -0.025em 0 rgb(0, 255, 0, .75),
-        0.045em 0 0 rgb(0, 0, 255, .75);
-        }
-    50% {
-        text-shadow: 
-        0.064em 0 0 rgb(255, 0, 0, .75),
-        -0.015em -0.045em 0 rgb(0, 255, 0, .75),
-        0.085em 0 0 rgb(0, 0, 255, .75);
-        }
-    99% {
-        text-shadow: 
-        0.064em 0 0 rgb(255, 0, 0, .75),
-        -0.015em -0.025em 0 rgb(0, 255, 0, .75),
-        0.085em 0 0 rgb(0, 0, 255, .75);
-        }
-    100% {
-        text-shadow: 
-        0.05em 0 0 rgb(255, 0, 0, .75),
-        -0.035em 0.03em 0 rgb(0, 255, 0, .75),
-        -0.055em 0 0 rgb(0, 0, 255, .75);
-        }
+.scroll-box {
+    height: 200px;
+    width: auto;
+    overflow-y: auto;
+    border: 1px solid white;
 }
