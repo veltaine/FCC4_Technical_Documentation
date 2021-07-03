@@ -68,6 +68,7 @@ h2 {
     
 }
 
+/* github icon */
 .fa.fa-github {
     font-size:50px;
 }
@@ -76,6 +77,13 @@ p {
     font-size: 2rem;
     font-weight: 500;
     padding-left: 4rem;
+}
+
+li {
+    display: inline;
+    position: relative;
+    left: 10rem;
+    font-size: x-large;
 }
 
 .glossary-definitions > p {
@@ -90,6 +98,7 @@ p {
     font-size: 1.5em;
     border: 1px 
 }
+
 
 .scroll-box {
     height: 200px;
